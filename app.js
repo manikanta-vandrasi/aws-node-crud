@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 
 const userRoutes = require("./routes/userRoutes");
+console.log("CI/CD Test Success");
 
 app.use("/users", userRoutes);
 
