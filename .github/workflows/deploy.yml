@@ -20,6 +20,7 @@ jobs:
 
           script: |
             cd ~/aws-node-crud
-            git pull origin main
+            git fetch origin
+            git reset --hard origin/main
             npm install
             pm2 restart aws-node-crud
